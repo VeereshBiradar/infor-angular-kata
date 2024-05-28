@@ -1,0 +1,20 @@
+
+<div class="modal" *ngIf="showModal">
+    <div class="modal--content">
+      <div class="modal--content--header">
+        <h2 class="modal--content--header--title" tabindex="0">{{ title }}</h2>
+        <span class="modal--content--header--close" (click)="closeModal()" tabindex="0" (keypress)="closeModal()">&times;</span>
+      </div>
+      <div class="modal--content--body">
+        <p tabindex="0">{{ modalText }}</p>
+        <br>
+        <p tabindex="0">{{ modalSubText}}</p>
+      </div>
+      <hr>
+      <div class="modal--content--footer"  aria-label="Close">
+        <button (click)="closeModal()">{{ buttonText }}</button>
+      </div>
+    </div>
+  </div>
+  
+  
